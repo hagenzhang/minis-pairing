@@ -43,7 +43,6 @@ def assign_weights(interest_flag, frequency_arr):
 
 def main():
     # [a, b, c, d, e, f]
-    # i need to change these weights using log base 2 instead of log base 10.
     
     h1 = [1, 1, 0, 0, 1, 0]
     h2 = [1, 0, 1, 1, 0, 0]
