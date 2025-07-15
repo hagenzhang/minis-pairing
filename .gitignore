@@ -1,3 +1,7 @@
 **/.DS_Store
 **/.vscode
 **/__pycache__
+
+# ignore the fasttext models
+**/cc.en.300.bin
+**/cc.en.300.bin.gz
