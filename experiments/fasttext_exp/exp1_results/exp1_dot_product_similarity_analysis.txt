@@ -1,0 +1,54 @@
+# range is [-inf, +inf]
+Notes:
+similarity with the identical word isn't 0, so
+we're probably gonna scrap this. cosine similarity
+includes this and is better anyways, no point not
+normalizing it and getting rid of magnitude
+
+Test Word For Dot Product Comparison: boba
+  Similarity boba vs boba = 5.0674367
+  Similarity boba vs tea = 2.5056007
+  Similarity boba vs coffee = 0.82189167
+  Similarity boba vs beverages = 0.41367546
+  Similarity boba vs computer = 0.07266299
+  Similarity boba vs chair = 0.13546003
+
+Test Word For Dot Product Comparison: tea
+  Similarity tea vs boba = 2.5056007
+  Similarity tea vs tea = 6.8413134
+  Similarity tea vs coffee = 1.8728206
+  Similarity tea vs beverages = 0.780791
+  Similarity tea vs computer = 0.24332793
+  Similarity tea vs chair = 0.66146404
+
+Test Word For Dot Product Comparison: coffee
+  Similarity coffee vs boba = 0.82189167
+  Similarity coffee vs tea = 1.8728206
+  Similarity coffee vs coffee = 1.0193651
+  Similarity coffee vs beverages = 0.32657123
+  Similarity coffee vs computer = 0.15441215
+  Similarity coffee vs chair = 0.300004
+
+Test Word For Dot Product Comparison: beverages
+  Similarity beverages vs boba = 0.41367546
+  Similarity beverages vs tea = 0.780791
+  Similarity beverages vs coffee = 0.32657123
+  Similarity beverages vs beverages = 0.46255362
+  Similarity beverages vs computer = 0.058455393
+  Similarity beverages vs chair = 0.12071521
+
+Test Word For Dot Product Comparison: computer
+  Similarity computer vs boba = 0.07266299
+  Similarity computer vs tea = 0.24332793
+  Similarity computer vs coffee = 0.15441215
+  Similarity computer vs beverages = 0.058455393
+  Similarity computer vs computer = 0.376945
+  Similarity computer vs chair = 0.207156
+
+Test Word For Dot Product Comparison: chair
+  Similarity chair vs boba = 0.13546003
+  Similarity chair vs tea = 0.66146404
+  Similarity chair vs coffee = 0.300004
+  Similarity chair vs beverages = 0.12071521
+  Similarity chair vs computer = 0.207156
+  Similarity chair vs chair = 1.51908

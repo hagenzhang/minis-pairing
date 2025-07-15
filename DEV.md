@@ -35,3 +35,14 @@ Not everyone on committee will be comfortable with csv files or the terminal, so
 One approach could be feeding the program an excel sheet or something? Or maybe a web or app UI (which is a lot more work, maybe hire some help for this.)
 
 I could also try and pre-process sentences into distinct words using FastText, and run it like that. That way, the user would just need to copy and paste a summary into the program instead of distinct words to directly use as tokens.
+
+
+### Dev Notes:
+- Category Ontology Approach:
+    - I think the best approach would honestly be to create a category ontology, where the top level categories are attributes and interests.
+        - Attributes: major, year, gender, personality (introvert, extrovert, etc)
+        - Interests: much more expansive of a tree
+    - This tree would have to be self-produced, and we would need to be able to "train" the model somehow based on previously successful fams.
+        - Success of a fam could be rated on a scale of 1-5, which would allow the model to determine how much weight to put in a fams pairing.
+    - New categories and interest would have to be added in manually, which may be a bit difficult. I wouldn't even know where to start!
+

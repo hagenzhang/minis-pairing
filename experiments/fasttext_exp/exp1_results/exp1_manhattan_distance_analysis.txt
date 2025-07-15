@@ -1,0 +1,53 @@
+# range is [0, +inf]
+Notes:
+coffee being so different from tea when compared
+to computer and chair is so strange.
+Discarding metric!
+
+Test Word For L1 Distance Comparison: boba
+  Similarity boba vs boba = 0.0
+  Similarity boba vs tea = 35.211304
+  Similarity boba vs coffee = 27.810051
+  Similarity boba vs beverages = 29.289965
+  Similarity boba vs computer = 30.738956
+  Similarity boba vs chair = 33.035637
+
+Test Word For L1 Distance Comparison: tea
+  Similarity tea vs boba = 35.211304
+  Similarity tea vs tea = 0.0
+  Similarity tea vs coffee = 27.224674
+  Similarity tea vs beverages = 32.644283
+  Similarity tea vs computer = 35.48181
+  Similarity tea vs chair = 36.544548
+
+Test Word For L1 Distance Comparison: coffee
+  Similarity coffee vs boba = 27.810051
+  Similarity coffee vs tea = 27.224674
+  Similarity coffee vs coffee = 0.0
+  Similarity coffee vs beverages = 12.041738
+  Similarity coffee vs computer = 14.186526
+  Similarity coffee vs chair = 19.121881
+
+Test Word For L1 Distance Comparison: beverages
+  Similarity beverages vs boba = 29.289965
+  Similarity beverages vs tea = 32.644283
+  Similarity beverages vs coffee = 12.041738
+  Similarity beverages vs beverages = 0.0
+  Similarity beverages vs computer = 11.343666
+  Similarity beverages vs chair = 18.422817
+
+Test Word For L1 Distance Comparison: computer
+  Similarity computer vs boba = 30.738956
+  Similarity computer vs tea = 35.48181
+  Similarity computer vs coffee = 14.186526
+  Similarity computer vs beverages = 11.343666
+  Similarity computer vs computer = 0.0
+  Similarity computer vs chair = 17.300484
+
+Test Word For L1 Distance Comparison: chair
+  Similarity chair vs boba = 33.035637
+  Similarity chair vs tea = 36.544548
+  Similarity chair vs coffee = 19.121881
+  Similarity chair vs beverages = 18.422817
+  Similarity chair vs computer = 17.300484
+  Similarity chair vs chair = 0.0

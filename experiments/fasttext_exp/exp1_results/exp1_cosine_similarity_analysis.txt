@@ -1,0 +1,51 @@
+# range is [-1, 1]
+Notes:
+Seems to be the most solid metric, results make sense
+
+Test Word For Cosine Similarity Comparison: boba
+  Similarity boba vs boba = 1.0
+  Similarity boba vs tea = 0.42554745
+  Similarity boba vs coffee = 0.36162254
+  Similarity boba vs beverages = 0.2701995
+  Similarity boba vs computer = 0.052575096
+  Similarity boba vs chair = 0.048823252
+
+Test Word For Cosine Similarity Comparison: tea
+  Similarity tea vs boba = 0.42554745
+  Similarity tea vs tea = 1.0000001
+  Similarity tea vs coffee = 0.70918834
+  Similarity tea vs beverages = 0.43891862
+  Similarity tea vs computer = 0.15152463
+  Similarity tea vs chair = 0.20518526
+
+Test Word For Cosine Similarity Comparison: coffee
+  Similarity coffee vs boba = 0.36162254
+  Similarity coffee vs tea = 0.70918834
+  Similarity coffee vs coffee = 0.9999999
+  Similarity coffee vs beverages = 0.47558916
+  Similarity coffee vs computer = 0.24910222
+  Similarity coffee vs chair = 0.2410859
+
+Test Word For Cosine Similarity Comparison: beverages
+  Similarity beverages vs boba = 0.2701995
+  Similarity beverages vs tea = 0.43891862
+  Similarity beverages vs coffee = 0.47558916
+  Similarity beverages vs beverages = 0.99999994
+  Similarity beverages vs computer = 0.13999243
+  Similarity beverages vs chair = 0.14400934
+
+Test Word For Cosine Similarity Comparison: computer
+  Similarity computer vs boba = 0.052575096
+  Similarity computer vs tea = 0.15152463
+  Similarity computer vs coffee = 0.24910222
+  Similarity computer vs beverages = 0.13999243
+  Similarity computer vs computer = 0.99999994
+  Similarity computer vs chair = 0.27375886
+
+Test Word For Cosine Similarity Comparison: chair
+  Similarity chair vs boba = 0.048823252
+  Similarity chair vs tea = 0.20518526
+  Similarity chair vs coffee = 0.2410859
+  Similarity chair vs beverages = 0.14400934
+  Similarity chair vs computer = 0.27375886
+  Similarity chair vs chair = 1.0000001
