@@ -38,6 +38,7 @@ I could also try and pre-process sentences into distinct words using FastText, a
 
 
 ### Dev Notes:
+07/14/2025
 - Category Ontology Approach:
     - I think the best approach would honestly be to create a category ontology, where the top level categories are attributes and interests.
         - Attributes: major, year, gender, personality (introvert, extrovert, etc)
@@ -45,4 +46,11 @@ I could also try and pre-process sentences into distinct words using FastText, a
     - This tree would have to be self-produced, and we would need to be able to "train" the model somehow based on previously successful fams.
         - Success of a fam could be rated on a scale of 1-5, which would allow the model to determine how much weight to put in a fams pairing.
     - New categories and interest would have to be added in manually, which may be a bit difficult. I wouldn't even know where to start!
+
+08/19/2025
+- Category Ontology is going to be used now exclusively for major, age, personality type, and gender. Fasttext seems to work well    enough with interests, as proven in experiment 2 of fasttext experiments.
+    - Using a directed acyclic graph (DAG) with edge weights is probably better than just a tree with node weights. This way, we can calculate how "far apart" two majors might be, while maintaining the nuance between majors and preventing harsh cuts / definitions.
+    - Edge weights will need to be trainable, probably with logistic regression (good match or no good match)? Will need to explore further.
+    - For next time, start with a small light example of 4 - 5 majors with set weights to get an initial simple algorithm that can just calculate the diffences between the majors. We can worry about the code for updating the weights later.
+ 
 
