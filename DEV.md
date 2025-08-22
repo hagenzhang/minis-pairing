@@ -52,5 +52,16 @@ I could also try and pre-process sentences into distinct words using FastText, a
     - Using a directed acyclic graph (DAG) with edge weights is probably better than just a tree with node weights. This way, we can calculate how "far apart" two majors might be, while maintaining the nuance between majors and preventing harsh cuts / definitions.
     - Edge weights will need to be trainable, probably with logistic regression (good match or no good match)? Will need to explore further.
     - For next time, start with a small light example of 4 - 5 majors with set weights to get an initial simple algorithm that can just calculate the diffences between the majors. We can worry about the code for updating the weights later.
- 
+
+08/22/2025
+- Our current approach of ontology would enforce a strict structure, which may not be good and harder to train
+- We can always link every single node together, but that would be really messy and reduce interpretability, which
+  defeats the purpose of me using an ontology tree to begin with
+- ChatGPT recommends keeping this current structure, but then adding a few edges to bridge gaps between categories
+  (partially connected graph). For instance, we can make an edge between graphic design and cs with extremely high
+  weight, and then let our model train down the number if it deems it necessary
+- These "cross links" should be determined systematically. We can use fasttext to determine semantic similarity, and
+  if they have a certain similarity score, then we include the link. Then, we can just manually adjust after training
+  the model (remove unused links, change the semantic similarity threshold for links to match, and re-find).
+    - We could also see how many successful matches have occurred between certain majors in the past, and then create a bridge if there is some sort of statistical precedent for it.
 
